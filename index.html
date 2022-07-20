@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vet Clinic</title>
-    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 
 <body>
@@ -48,13 +48,13 @@
                     <nav class="header-main__nav">
                         <ul class="header-main__list">
                             <li class="header-main__item">
-                                <a href="#" class="header-main__link header-main__link-active">Главная</a>
+                                <a href="./index.html" class="header-main__link header-main__link-active">Главная</a>
                             </li>
                             <li class="header-main__item">
                                 <a href="#" class="header-main__link">О Клинике</a>
                             </li>
                             <li class="header-main__item">
-                                <a href="#" class="header-main__link">Наши Услуги</a>
+                                <a href="./service.html" class="header-main__link">Наши Услуги</a>
                             </li>
                             <li class="header-main__item">
                                 <a href="#" class="header-main__link">Полезные Статьи</a>
@@ -67,7 +67,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <a class="header-main__question-link" href="#">Задать вопрос</a>
+                    <button type="button" class="header-main__question-link">Задать вопрос</button>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
     <!-- End of Header Section -->
 
     <!-- Start Main Section -->
-    <main>
+    <main class="site-main">
         <!-- Start Hero Section -->
         <section id="hero">
             <div class="container">
@@ -100,13 +100,13 @@
         <section id="quote">
             <div class="container">
                 <div class="quote-part">
-                    <h2 class="visually-hidden">visually-hidden</h2>
+                    <h2 class="visually-hidden" aria-hidden="true">Оржоникидзевская Ветеринарная клиника</h2>
                     <blockquote class="quote-part__quote-text">
                         Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и
                         благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную
                         ветеринарную помощь.
+                        <h3 class="quote-part__text">Оржоникидзевская Ветеринарная клиника</h3>
                     </blockquote>
-                    <h3 class="quote-part__text">Оржоникидзевская Ветеринарная клиника</h3>
                 </div>
             </div>
         </section>
@@ -116,15 +116,15 @@
         <section id="service">
             <div class="container">
                 <div class="service-part">
-                    <div class="service-part__title-box">
-                        <h2 class="service-part__title">
+                    <div class="service-part__title-box section-title-box">
+                        <h2 class="service-part__title section-title-box__title">
                             Наши услуги
                         </h2>
                     </div>
                     <div class="service-part__list-box">
-                        <span class="service-part__arrow-left">
+                        <button class="service-part__arrow-left" type="button">
                             <img src="./images/arrow-left.svg" width="14" height="26" alt="">
-                        </span>
+                        </button>
                         <ul class="service-part__list service-list">
                             <li class="service-list__item service-list__item--active">
                                 <a href="#" class="service-list__link">
@@ -211,7 +211,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <button type="button" class="service-part__arrow-right">
+                        <button class="service-part__arrow-right" type="button">
                             <img src="./images/arrow-right.svg" width="14" height="26" alt="">
                         </button>
                     </div>
@@ -220,7 +220,7 @@
                             <img class="service-content__main-img" src="./images/first-view-cat.jpg" width="524"
                                 height="329" alt="Cat looking at loop"
                                 srcset="./images/first-view-cat.jpg 1x, ./images/first-view-cat@2x.jpg 2x">
-                            <div class="content-box__text_box">
+                            <div class="service-content__content-box content-box">
                                 <h4 class="content-box__title">Первичный осмотр</h4>
                                 <p class="content-box__text content-box__text--active">По условиям акции в нашей клинике
                                     предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить
@@ -246,10 +246,10 @@
             <div class="container">
                 <div class="notification-part">
                     <h2 class="notification-part__title">Будь в курсе событий</h2>
-                    <form class="notification-part__form" action="https://echo.htmlacademy.ru/courses"
-                        autocomplete="off" method="POST">
+                    <form class="notification-part__form" action="https://echo.htmlacademy.ru/courses" method="POST"
+                        autocomplete="off">
                         <label>
-                            <input class="notification-part__input" type="email" name="user-email"
+                            <input class="notification-part__input" type="email" name="user_email"
                                 aria-label="Укажите Ваш email адрес" placeholder="Укажите Ваш email адрес" required>
                         </label>
                         <button class="notification-part__btn" type="submit">Подписаться</button>
@@ -263,15 +263,15 @@
         <section id="useful">
             <div class="container">
                 <div class="useful-part">
-                    <div class="service-part__title-box">
-                        <h2 class="service-part__title useful-part__title">
+                    <div class="section-title-box">
+                        <h2 class=" useful-part__title section-title-box__title">
                             Полезные статьи
                         </h2>
                     </div>
                     <ul class="useful-list">
                         <li class="useful-list__item useful-list__item--active">
                             <img class="useful-list__img" src="./images/useful-quote-img-1.jpg" width="305" height="180"
-                                alt="" srcset="./images/useful-quote-img-1@2x.jpg 2x">
+                                alt="" srcset="./images/useful-quote-img-1.jpg 1x,./images/useful-quote-img-1@2x.jpg 2x">
                             <div class="useful-list__text-box">
                                 <div class="useful-list__top-box">
                                     <!-- <div class="useful-list__tag-box">
@@ -299,8 +299,8 @@
                             </div>
                         </li>
                         <li class="useful-list__item useful-list__item--active">
-                            <img class="useful-list__img" src="./images/useful-quote-img-1.jpg" width="305" height="180"
-                                alt="" srcset="./images/useful-quote-img-1@2x.jpg 2x">
+                            <img class="useful-list__img" src="./images/useful-quote-img-2.png" width="305" height="180"
+                                alt="" srcset="./images/useful-quote-img-2.png 1x, ./images/useful-quote-img-2@2x.png 2x">
                             <div class="useful-list__text-box">
                                 <div class="useful-list__top-box">
                                     <!-- <div class="useful-list__tag-box">
@@ -328,8 +328,8 @@
                             </div>
                         </li>
                         <li class="useful-list__item useful-list__item--active">
-                            <img class="useful-list__img" src="./images/useful-quote-img-1.jpg" width="305" height="180"
-                                alt="" srcset="./images/useful-quote-img-1@2x.jpg 2x">
+                            <img class="useful-list__img" src="./images/useful-quote-img-3.png" width="305" height="180"
+                                alt="" srcset="./images/useful-quote-img-3.png 1x, ./images/useful-quote-img-3@2x.png 2x">
                             <div class="useful-list__text-box">
                                 <div class="useful-list__top-box">
                                     <!-- <div class="useful-list__tag-box">
@@ -380,18 +380,19 @@
                         <p class="form-box__text">При возникновении вопросов по поводу работы клиники или консультаций,
                             заполните форму ниже:</p>
                     </div>
-                    <form class="form-box__main-form" action="https://echo.htmlacademy.ru/courses" autocomplete="off"
-                        method="POST">
+                    <form class="form-box__main-form" action="https://echo.htmlacademy.ru/courses" method="POST"
+                        autocomplete="off">
                         <label>
                             <input class="form-box__input" type="text" name="user_name" aria-label="Ваше имя"
                                 placeholder="Ваше имя" minlength="3" required>
                         </label>
                         <label>
-                            <input class="form-box__input" type="email" name="user_email" aria-label="Ваше имя"
-                                placeholder="Email для обратной связи" required>
+                            <input class="form-box__input" type="email" name="user_email"
+                                aria-label="Email для обратной связи" placeholder="Email для обратной связи" required>
                         </label>
                         <label>
                             <textarea class="form-box__message" name="user_message" cols="30" rows="10" minlength="3"
+                                aria-label="Опишите Ваш вопрос."
                                 placeholder="Опишите Ваш вопрос. Например: в каком возрасте можно прививать от бешенства?"></textarea>
                         </label>
                         <button class="form-box__btn" type="submit">Задать нам вопрос</button>
@@ -412,13 +413,13 @@
                 </a>
                 <ul class="footer-part__list">
                     <li class="footer-part__item">
-                        <a href="#">Главная</a>
+                        <a href="./index.html">Главная</a>
                     </li>
                     <li class="footer-part__item">
                         <a href="#">О Клинике</a>
                     </li>
                     <li class="footer-part__item">
-                        <a href="#">Наши Услуги</a>
+                        <a href="./service.html">Наши Услуги</a>
                     </li>
                 </ul>
                 <ul class="footer-part__list">
@@ -450,17 +451,59 @@
                         г. Мариуполь, проспект Победы, 48а
                     </a>
                 </address>
-                <div class="footer-part__tel-box">
-                    <a class="header-top__tel-links" href="tel:+0676347574">(067) 634 -75 - 74</a>
-                    <a class="header-top__tel-links" href="tel:+0637570131">(0637) 57 - 01-
-                        31</a>
-                    <a class="header-top__tel-links" href="tel:+0982664389">(098) 266 - 43 - 89</a>
-                </div>
+                <ul class="footer-part__tel-list">
+                    <li class="footer-part__tel-item">
+                        <a class="footer-part__tel-links" href="tel:+0676347574">(067) 634 -75 - 74</a>
+                    </li>
+                    <li class="footer-part__tel-item">
+                        <a class="footer-part__tel-links" href="tel:+0637570131">(0637) 57 - 01-
+                            31</a>
+                    </li>
+                    <li class="footer-part__tel-item">
+                    <a class="footer-part__tel-links" href="tel:+0982664389">(098) 266 - 43 - 89</a>
+                    </li>
+                </ul>
             </div>
             <p class="footer-copyright-text">© 2020 example. All Rights Reserved.</p>
         </div>
     </footer>
     <!-- End of Footer Section -->
+
+        <!-- Start Questin Modal Window -->
+        <div class="modal-main">
+            <div class="modal-window">
+                <button class="modal-window__close-btn"></button>
+                <div class="modal-links-box">
+                    <p class="modal-links-box__title">
+                        Авторизация:
+                    </p>
+                    <div class="modal-links-box__link-box">
+                        <a class="modal-link-box__google-link" href="http://google.com" target="blank"
+                            rel="noopener noreferrer">Войти через Google</a>
+                        <a class="modal-link-box__facebook-link" href="http://facebook.com" target="blank"
+                            rel="noopener noreferrer">Войти через Facebook</a>
+                    </div>
+                </div>
+                <div class="modal-window__form-box modal-form-box">
+                    <h3 class="modal-form-box__title">Задать вопрос</h3>
+                    <form class="modal-form-box__form" action="https://echo.htmlacademy.ru/courses" method="POST"
+                        autocomplete="off">
+                        <label>
+                            <input class="modal-form-box__input" type="text" name="user_name" aria-label="Ваше имя"
+                                placeholder="Ваше имя" minlength="3" required>
+                        </label>
+                        <label>
+                            <textarea class="modal-form-box__message" name="user_message" aria-label="Опишите Ваш вопрос."
+                                cols="30" rows="10" minlength="3" placeholder="Опишите Ваш вопрос."></textarea>
+                        </label>
+                        <button class="modal-form-box__btn" type="submit">Отправить </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End of Questin Modal Window -->
+    
+        <script src="./js/main.js"></script>
 </body>
 
 </html>
