@@ -222,7 +222,8 @@ body {
 }
 
 .header-top__tel-links:hover,
-.footer-part__tel-links:hover {
+.footer-part__tel-links:hover,
+.contact-list__phone-link:hover {
     color: var(--main--color);
 }
 
@@ -1486,14 +1487,16 @@ body {
 }
 
 .service-hero-part__info-box,
-.faq-hero-part__info-box {
+.faq-hero-part__info-box,
+.contact-hero-part__info-box {
     width: 447px;
     margin-left: 100px;
     padding: 118px 0 140px 0;
 }
 
 .service-hero-part__title,
-.faq-hero-part__title {
+.faq-hero-part__title,
+.contact-hero-part__title {
     margin: 0;
     font-weight: 700;
     font-size: 70px;
@@ -1502,7 +1505,8 @@ body {
 }
 
 .service-hero-part__text,
-.faq-hero-part__text {
+.faq-hero-part__text,
+.contact-hero-part__text {
     margin: 21px 0 0 0;
     font-size: 16px;
     line-height: 20px;
@@ -1651,7 +1655,7 @@ body {
     background-image: url('../images/faq-hero-img.png'), url("../images/faq-summary-img.png");
     background-repeat: no-repeat;
     background-size: 569px 466px, ;
-    background-position: calc(50% + 540px)  55px,calc(50% + 560px)  805px ;
+    background-position: calc(50% + 540px) 55px, calc(50% + 560px) 805px;
 }
 
 .faq-hero-part__info-box {
@@ -1789,6 +1793,152 @@ body {
 /* End of FAQ Hero Section */
 
 /* ---------- End of FAQ Page ---------- */
+
+/* ---------- Start Contact Page ---------- */
+
+/* Start Contact Hero Section */
+#contact-hero {
+    background-image: url("../images/contact-hero-img.png");
+    background-position: calc(50% + 590px) calc(50% + 0px);
+    background-size: 673px 568px;
+    background-repeat: no-repeat;
+}
+
+.contact-hero-part {
+    padding-bottom: 131px;
+}
+
+.contact-hero-part__info-box {
+    padding-bottom: 117px;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-between;
+    width: 636px;
+    margin-left: 100px;
+}
+
+.contact-list__item {
+    width: 153px;
+}
+
+.contact-list__item::before {
+    display: block;
+    width: 73px;
+    height: 73px;
+    margin-bottom: 30px;
+    background-image: url("../images/location.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.contact-list__item:nth-child(2)::before {
+    background-image: url("../images/calendar.svg");
+    width: 76px;
+    height: 72px;
+}
+
+.contact-list__item:nth-child(3)::before {
+    background-image: url("../images/phone-chat.svg");
+    width: 46px;
+    height: 73px;
+}
+
+.contact-list__address-link,
+.contact-list__time,
+.contact-list__phone-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--main-text-color);
+    transition: color .5s;
+}
+
+.contact-list__time {
+    font-weight: bold;
+}
+
+.contact-list__time:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.contact-list__time-text {
+    font-weight: 500;
+}
+
+.contact-list__phone-link:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+/* End of Contact Hero Section */
+
+/* Start Contact Address Section */
+#contact-address {
+    padding: 258px 0 201px 0;
+}
+
+.contact-address-part {
+    width: 1519px;
+    margin: 0 auto;
+}
+
+.contact-address-part__title-box {
+    position: relative;
+}
+
+.contact-address-part__title-box::before {
+    position: absolute;
+    top: -121px;
+    left: 50%;
+    width: 112px;
+    height: 112px;
+    background-image: url("../images/search-pet.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.contact-address-part__title-box::after {
+    position: absolute;
+    top: -250px;
+    left: 500px;
+    width: 934px;
+    height: 330px;
+    background-image: url("../images/group-of-pets.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.contact-address-part__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.address-box {
+    position: relative;
+    display: flex;
+    margin-top: 60px;
+}
+
+.address-box::before {
+    position: absolute;
+    top: -296px;
+    left: 10px;
+    width: 443px;
+    height: 342px;
+    background-image: url("../images/contact-address-img.png");
+    content: "";
+}
+
+/* End of Contact Address Section */
+
+/* ---------- End of Contact Page ---------- */
 
 /* Start Questin Modal Window  */
 
@@ -2067,6 +2217,10 @@ only screen and (min-resolution: 2dppx) {
 
     #faq-hero {
         background-image: url("../images/faq-hero-img@2x.png"), url("../images/faq-summary-img@2x.png");
+    }
+
+    .address-box::before {
+        background-image: url("../images/contact-address-img@2x.png");
     }
 
     .modal-window {
