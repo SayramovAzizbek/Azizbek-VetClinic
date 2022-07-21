@@ -1485,13 +1485,15 @@ body {
     background-position: calc(50% + 540px) calc(50% - 672px);
 }
 
-.service-hero-part__info-box {
+.service-hero-part__info-box,
+.faq-hero-part__info-box {
     width: 447px;
     margin-left: 100px;
     padding: 118px 0 140px 0;
 }
 
-.service-hero-part__title {
+.service-hero-part__title,
+.faq-hero-part__title {
     margin: 0;
     font-weight: 700;
     font-size: 70px;
@@ -1499,7 +1501,8 @@ body {
     color: var(--main-text-color);
 }
 
-.service-hero-part__text {
+.service-hero-part__text,
+.faq-hero-part__text {
     margin: 21px 0 0 0;
     font-size: 16px;
     line-height: 20px;
@@ -1639,6 +1642,153 @@ body {
 /* End of Service Hero Section */
 
 /* ---------- End of Service Page ---------- */
+
+/* ---------- Start FAQ Page ---------- */
+
+/* Start FAQ Hero Section */
+#faq-hero {
+    padding-bottom: 270px;
+    background-image: url('../images/faq-hero-img.png'), url("../images/faq-summary-img.png");
+    background-repeat: no-repeat;
+    background-size: 569px 466px, ;
+    background-position: calc(50% + 540px)  55px,calc(50% + 560px)  805px ;
+}
+
+.faq-hero-part__info-box {
+    padding-bottom: 63px;
+}
+
+.accardion-list {
+    margin-left: 100px;
+}
+
+.accardion-list__item {
+    width: 752px;
+    padding: 23px 41px 32px 63px;
+    background-color: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+}
+
+.accardion-list__item:nth-child(3),
+.accardion-list__item:nth-child(6) {
+    opacity: 0.6;
+}
+
+.accardion-list__item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.faq-hero-part__link {
+    position: relative;
+    margin-top: 35px;
+    padding: 15px 38px 14px 66px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #78C0DE;
+    border-radius: 3px;
+}
+
+.faq-hero-part__link::before {
+    position: absolute;
+    top: 15px;
+    left: 39px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../images/document-icon.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.faq-accardion__top-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 291px;
+    margin-bottom: 10px;
+}
+
+.faq-accardion__time {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--main-text-color);
+}
+
+.faq-accardion__time::before {
+    width: 21px;
+    height: 21px;
+    margin-right: 7px;
+    background-image: url("../images/yellow-pet.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.faq-accardion__top-text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--main--blue-color);
+}
+
+.accardion-list__item:nth-child(2) .faq-accardion__time::before,
+.accardion-list__item:nth-child(4) .faq-accardion__time::before,
+.accardion-list__item:nth-child(6) .faq-accardion__time::before {
+    background-image: url("../images/blue-pet.svg");
+}
+
+.faq-accardion__part {
+    position: relative;
+    width: 539px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--main-text-color);
+    list-style: none;
+}
+
+.faq-accardion__part::after {
+    position: absolute;
+    top: 0;
+    right: -109px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    transition: transform .5s;
+}
+
+.faq-accardion[open] .faq-accardion__part::after {
+    transform: rotate(180deg);
+}
+
+.accardion-list__item:nth-child(3) .faq-accardion__part::after,
+.accardion-list__item:nth-child(6) .faq-accardion__part::after {
+    background-image: url("../images/clock.svg");
+}
+
+.accardion-list__item:nth-child(3) .faq-accardion[open] .faq-accardion__part::after,
+.accardion-list__item:nth-child(6) .faq-accardion[open] .faq-accardion__part::after {
+    transform: none;
+}
+
+.faq-accardion__text {
+    margin: 23px 0 43px 0;
+    line-height: 20px;
+    color: #949494;
+}
+
+/* End of FAQ Hero Section */
+
+/* ---------- End of FAQ Page ---------- */
 
 /* Start Questin Modal Window  */
 
@@ -1912,8 +2062,11 @@ only screen and (min-resolution: 2dppx) {
     }
 
     #service-hero {
-        -o-border-image: url("../images/service-hero-bg@2x.png");
-        border-image: url("../images/service-hero-bg@2x.png");
+        background-image: url("../images/service-hero-bg@2x.png");
+    }
+
+    #faq-hero {
+        background-image: url("../images/faq-hero-img@2x.png"), url("../images/faq-summary-img@2x.png");
     }
 
     .modal-window {

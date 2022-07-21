@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vet Clinic</title>
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 
 <body>
@@ -54,14 +54,14 @@
                                 <a href="#" class="header-main__link">О Клинике</a>
                             </li>
                             <li class="header-main__item">
-                                <a href="./service.html" class="header-main__link header-main__link-active">Наши
+                                <a href="./service.html" class="header-main__link">Наши
                                     Услуги</a>
                             </li>
                             <li class="header-main__item">
                                 <a href="#" class="header-main__link">Полезные Статьи</a>
                             </li>
                             <li class="header-main__item">
-                                <a href="./question.html" class="header-main__link">FAQ</a>
+                                <a href="./question.html" class="header-main__link header-main__link-active">FAQ</a>
                             </li>
                             <li class="header-main__item">
                                 <a href="#" class="header-main__link">Контакты</a>
@@ -75,98 +75,120 @@
     </header>
     <!-- End of Header Section -->
 
-    <!-- Start Main Part  -->
+    <!-- Start Main Part -->
     <main class="site-main">
-        <!-- Start Service Hero Section -->
-        <section id="service-hero">
+        <section id="faq-hero">
             <div class="container">
-                <div class="service-hero-part">
-                    <div class="service-hero-part__info-box">
-                        <h2 class="service-hero-part__title">
-                            Наши услуги
+                <div class="faq-hero-part">
+                    <div class="faq-hero-part__info-box">
+                        <h2 class="faq-hero-part__title">
+                            FAQ
                         </h2>
-                        <p class="service-hero-part__text">Узнать информацию о наших услугах, записаться на прием к
+                        <p class="faq-hero-part__text">Узнать информацию о наших услугах, записаться на прием к
                             врачу или проконсультироваться вы можете
                             по телефону, в любое удобное для вас время.</p>
+                        <a class="faq-hero-part__link" href="#">Задать вопрос</a>
                     </div>
-                    <ul class="service-hero-part__list service-page-list">
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Первичный осмотр</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
+                    <ul class="faq-hero-part__accardion-list accardion-list">
+                        <li class="accardion-list__item">
+                            <div class="faq-accardion__top-info">
+                                <time class="faq-accardion__time" datetime="2020-09-01 12:17">01.09.2020</time>
+                                <p class="faq-accardion__top-text">Пономаренко Наталия</p>
+                            </div>
+                            <details class="faq-hero-part__accardion faq-accardion">
+                                <summary class="faq-accardion__part">Как часто следует проводить обработки от блох и
+                                    клещей?
+                                </summary>
+                                <p class="faq-accardion__text">Самые качественные капли от блох и клещей как правило
+                                    действуют не более одного месяца. Поэтому собак и кошек следует обрабатывать от
+                                    блох именно с такой периодичностью. Обработки противопаразитарными каплями
+                                    особенно актуальны для собак в период с марта по декабрь, когда активизируют
+                                    свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в
+                                    ветеринарном комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки
+                                    этих препаратов.
+                                </p>
+                            </details>
                         </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Первичный осмотр</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
+                        <li class="accardion-list__item">
+                            <div class="faq-accardion__top-info">
+                                <time class="faq-accardion__time" datetime="2020-09-01 12:17">01.09.2020</time>
+                                <p class="faq-accardion__top-text">Пономаренко Наталия</p>
+                            </div>
+                            <details class="faq-hero-part__accardion faq-accardion">
+                                <summary class="faq-accardion__part">Может ли кошка или собака никогда не выходящая из
+                                    дома подхватить блох?
+                                </summary>
+                                <p class="faq-accardion__text">Самые качественные капли от блох и клещей как правило
+                                    действуют не более одного месяца. Поэтому собак и кошек следует обрабатывать от
+                                    блох именно с такой периодичностью. Обработки противопаразитарными каплями
+                                    особенно актуальны для собак в период с марта по декабрь, когда активизируют
+                                    свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в
+                                    ветеринарном комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки
+                                    этих препаратов.
+                                </p>
+                            </details>
                         </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Хирургическое вмешательство</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
+                        <li class="accardion-list__item">
+                            <div class="faq-accardion__top-info">
+                                <time class="faq-accardion__time" datetime="2020-09-01 12:17">01.09.2020</time>
+                                <p class="faq-accardion__top-text">Пономаренко Наталия</p>
+                            </div>
+                            <details class="faq-hero-part__accardion faq-accardion">
+                                <summary class="faq-accardion__part">Может ли кошка или собака никогда не выходящая из
+                                    дома подхватить блох?
+                                </summary>
+                            </details>
                         </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Дерматология</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
+                        <li class="accardion-list__item">
+                            <div class="faq-accardion__top-info">
+                                <time class="faq-accardion__time" datetime="2020-09-01 12:17">01.09.2020</time>
+                                <p class="faq-accardion__top-text">Пономаренко Наталия</p>
+                            </div>
+                            <details class="faq-hero-part__accardion faq-accardion">
+                                <summary class="faq-accardion__part">Чем очищать глаза собаке или кошке?
+                                </summary>
+                                <p class="faq-accardion__text">Самые качественные капли от блох и клещей как правило
+                                    действуют не более одного месяца. Поэтому собак и кошек следует обрабатывать от
+                                    блох именно с такой периодичностью. Обработки противопаразитарными каплями
+                                    особенно актуальны для собак в период с марта по декабрь, когда активизируют
+                                    свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в
+                                    ветеринарном комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки
+                                    этих препаратов.
+                                </p>
+                            </details>
                         </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Лабораторная диагностика</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
+                        <li class="accardion-list__item">
+                            <div class="faq-accardion__top-info">
+                                <time class="faq-accardion__time" datetime="2020-09-01 12:17">01.09.2020</time>
+                                <p class="faq-accardion__top-text">Пономаренко Наталия</p>
+                            </div>
+                            <details class="faq-hero-part__accardion faq-accardion">
+                                <summary class="faq-accardion__part">Чем лучше кормить – натуральным или готовым кормом?
+                                </summary>
+                                <p class="faq-accardion__text">Самые качественные капли от блох и клещей как правило
+                                    действуют не более одного месяца. Поэтому собак и кошек следует обрабатывать от
+                                    блох именно с такой периодичностью. Обработки противопаразитарными каплями
+                                    особенно актуальны для собак в период с марта по декабрь, когда активизируют
+                                    свою активность клещи. Подобрать препарат от блох и клещей Вам помогут в
+                                    ветеринарном комплексе “Передовой”. Также здесь Вам помогут в расчёте дозировки
+                                    этих препаратов.
+                                </p>
+                            </details>
                         </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Офтальмология</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
-                        </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">УЗИ диагностика</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
-                        </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Чипированиея</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
-                        </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Международ- ные паспорта</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
-                        </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Вакцинация</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
-                        </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Стоматология</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
-                        </li>
-                        <li class="service-page-list__item">
-                            <h3 class="service-page-list__title">Вызов на дом</h3>
-                            <p class="service-page-list__info">По условиям акции в нашей клинике предоставляетса
-                                безплатная услуга</p>
-                            <a class="service-page-list__link" href="#">Узнать больше</a>
+                        <li class="accardion-list__item">
+                            <div class="faq-accardion__top-info">
+                                <time class="faq-accardion__time" datetime="2020-09-01 12:17">01.09.2020</time>
+                                <p class="faq-accardion__top-text">Пономаренко Наталия</p>
+                            </div>
+                            <details class="faq-hero-part__accardion faq-accardion">
+                                <summary class="faq-accardion__part">Зачем нужны витамины и в каком возрасте их нужно давать?
+                                </summary>
+                            </details>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <!-- End of Service Hero Section -->
     </main>
     <!-- End of Main Part  -->
 
