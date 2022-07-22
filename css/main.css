@@ -1940,6 +1940,250 @@ body {
 
 /* ---------- End of Contact Page ---------- */
 
+/* ---------- Start Open Page ---------- */
+/* Start Open Hero Section */
+#open-hero {
+    padding-top: 497px;
+    background-image: url("../images/open-hero-bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(50% + 1px) calc(50% - 5px);
+}
+
+/* End of Open Hero Section */
+
+/* Start Open Info Section */
+.open-info-part {
+    display: flex;
+    margin: 32px 0 174px 0;
+
+}
+
+.open-main {
+    margin: 0 143px 0 auto;
+    width: 640px;
+}
+
+.open-main__top-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.open-main__top-item:not(:last-child) {
+    margin-right: 18px;
+}
+
+.open-top__top-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #949494;
+    text-decoration: none;
+}
+
+.open-top__top-link--style {
+    display: flex;
+    align-items: center;
+}
+
+.open-top__top-link--style::before,
+.open-top__top-link--style::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--main--color);
+}
+
+.open-top__top-link--style::before {
+    margin-right: 8px;
+}
+
+.open-top__top-link--style::after {
+    margin-left: 8px;
+}
+
+.open-top__top-link--active {
+    color: var(--main-text-color);
+}
+
+.open-main__title {
+    margin: 33px 0 28px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: var(--main-text-color);
+}
+
+.open-main__title-yellow {
+    color: var(--main--color);
+}
+
+.open-main__texts {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.open-main__texts:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.open-main__texts:nth-child(2) {
+    margin-bottom: 28px;
+}
+
+.open-main__link-box {
+    display: flex;
+    align-items: center;
+    width: 447px;
+    margin-top: 64px;
+}
+
+.open-main__link {
+    display: inline-flex;
+    padding: 15px 37px 14px 37px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.open-main__link--price {
+    margin-right: 21px;
+    background-color: var(--main--color);
+    border-radius: 3px;
+}
+
+.open-main__link--price:hover {
+    background-color: var(--main-text-color);
+    color: var(--main--color);
+}
+
+.open-main__link--price:active,
+.open-main__link--follow:active {
+    opacity: 0.6;
+}
+
+.open-main__link--price::before,
+.open-main__link--follow::before {
+    content: "";
+    margin-right: 7px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../images/money.svg");
+}
+
+.open-main__link--follow {
+    background-color: var(--main-text-color);
+    border-radius: 3px;
+}
+
+.open-main__link--follow::before {
+    background-image: url("../images/document.svg");
+}
+
+.open-main__link--follow:hover {
+    background-color: var(--main--color);
+    color: var(--main-text-color);
+}
+
+.open-article {
+    width: 305px;
+    margin-top: 9px;
+}
+
+.open-article__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.open-article__item {
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+}
+
+.open-article__item:not(:last-child) {
+    margin-bottom: 11px;
+}
+
+.open-article__text-box {
+    padding: 19px 27px 38px 30px;
+}
+
+.open-article__item-time {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #949494;
+}
+
+.open-article__list-title-box {
+    width: 182px;
+}
+
+.open-article__list-title {
+    margin: 3px 0 0 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.open-article__list-text-box {
+    width: 244px;
+}
+
+.open-article__list-text {
+    margin: 13px 0 30px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;  
+}
+
+.open-article__list-link {
+    display: inline-flex;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--main-text-color);
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.open-article__list-link::before {
+    width: 23px;
+    height: 21px;
+    margin-right: 5px;
+    background-image: url("../images/pet.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.open-article__list-link:hover {
+    color: var(--main--color);
+}
+
+.open-article__list-link:active{
+    opacity: 0.6;
+}
+
+/* End of Open Info Section */
+
+/* ---------- End of Open Page ---------- */
+
 /* Start Questin Modal Window  */
 
 .modal-main {
