@@ -2218,7 +2218,20 @@ body {
 }
 
 .open-form {
+    position: relative;
     width: 335px;
+}
+
+.open-form::before {
+    position: absolute;
+    top: calc(50% - 289px);
+    left: calc(50% + 100px);
+    width: 700px;
+    height: 636px;
+    background-image: url("../images/open-form-dog-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
 }
 
 .open-form__input,
@@ -2257,6 +2270,7 @@ body {
 }
 
 .open-form__btn {
+    margin-top: 12px;
     padding: 15px 49px 14px 50px;
     font-weight: 500;
     font-size: 16px;
@@ -2274,22 +2288,6 @@ body {
 
 .open-form__btn:active {
     opacity: 0.6;
-}
-
-.open-form {
-    position: relative;
-}
-
-.open-form::before {
-    position: absolute;
-    top: calc(50% - 295px);
-    left: calc(50% + 100px);
-    width: 700px;
-    height: 636px;
-    background-image: url("../images/open-form-dog-bg.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
 }
 
 /* End of Open Form Section */
