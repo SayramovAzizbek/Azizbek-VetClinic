@@ -80,6 +80,7 @@
     <main class="site-main">
         <!-- Start Open Hero Section -->
         <section id="open-hero">
+            <h2 class="visually-hidden">Open Hero Section</h2>
         </section>
         <!-- End of Open Hero Section -->
 
@@ -90,14 +91,14 @@
                     <div class="open-info-part__main-text open-main">
                         <ul class="open-main__top-list">
                             <li class="open-main__top-item">
-                                <a class="open-top__top-link" href="./index.html">Главная</a>
+                                <a class="open-main__top-link" href="./index.html">Главная</a>
                             </li>
                             <li class="open-main__top-item">
-                                <a class="open-top__top-link open-top__top-link--style" href="./service.html">Наши
+                                <a class="open-main__top-link open-main__top-link--style" href="./service.html">Наши
                                     Услуги</a>
                             </li>
                             <li class="open-main__top-item">
-                                <a class="open-top__top-link open-top__top-link--active" href="./open.html">Первичный
+                                <a class="open-main__top-link open-main__top-link--active" href="./open.html">Первичный
                                     осмотр</a>
                             </li>
                         </ul>
@@ -151,7 +152,8 @@
                     <article class="open-info-part__article-part open-article">
                         <ul class="open-article__list">
                             <li class="open-article__item">
-                                <img src="./images/useful-quote-img-3.png" width="305" height="180" alt="White dog" srcset="./images/useful-quote-img-3.png 1x, ./images/useful-quote-img-3@2x.png 2x">
+                                <img src="./images/useful-quote-img-3.png" width="305" height="180" alt="White dog"
+                                    srcset="./images/useful-quote-img-3.png 1x, ./images/useful-quote-img-3@2x.png 2x">
                                 <div class="open-article__text-box">
                                     <time class="open-article__item-time" datetime="2020-07-21">21.07.2020</time>
                                     <div class="open-article__list-title-box">
@@ -168,7 +170,8 @@
                                 </div>
                             </li>
                             <li class="open-article__item">
-                                <img src="./images/useful-quote-img-1.jpg" width="305" height="180" alt="Sitting Cat" srcset="./images/useful-quote-img-1.jpg 1x, ./images/useful-quote-img-1@2x.jpg 2x">
+                                <img src="./images/useful-quote-img-1.jpg" width="305" height="180" alt="Sitting Cat"
+                                    srcset="./images/useful-quote-img-1.jpg 1x, ./images/useful-quote-img-1@2x.jpg 2x">
                                 <div class="open-article__text-box">
                                     <time class="open-article__item-time" datetime="2020-08-28">28.08.2020</time>
                                     <h2 class="open-article__list-title">Ультразвуковая чистка зубов</h2>
@@ -186,6 +189,32 @@
             </div>
         </section>
         <!-- End of Open Info Section -->
+
+        <!-- Start Open Form Section -->
+        <section id="open-form">
+            <div class="container">
+                <div class="open-form-part">
+                    <div class="open-form-part__title-box">
+                        <h2 class="open-form-part__title">Остались вопросы?</h2>
+                        <p class="open-form-part__text">Напишите нам</p>
+                    </div>
+                    <form class="open-form-part__form open-form" action="https://echo.htmlacademy.ru/courses"
+                        method="POST" autocomplete="off">
+                        <input class="open-form__input" type="text" name="user__name" aria-label="Ваше имя"
+                            minlength="3" placeholder="Ваше имя">
+                        <input class="open-form__input" type="email" name="user__email"
+                            aria-label="Email для обратной связи" placeholder="Email для обратной связи">
+                        <label>
+                            <textarea class="open-form__message" name="user__message" cols="30" rows="10" minlength="3"
+                                placeholder="Опишите Ваш вопрос. Например: в каком возрасте можно прививать от бешенства?"></textarea>
+                        </label>
+                        <button class="open-form__btn" type="submit">Задать нам вопрос</button>
+                    </form>
+                    <div class="open-form-part__dog-bg"></div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Open Form Section -->
     </main>
     <!-- End of Main Part -->
 

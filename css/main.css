@@ -1976,7 +1976,7 @@ body {
     margin-right: 18px;
 }
 
-.open-top__top-link {
+.open-main__top-link {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -1984,13 +1984,13 @@ body {
     text-decoration: none;
 }
 
-.open-top__top-link--style {
+.open-main__top-link--style {
     display: flex;
     align-items: center;
 }
 
-.open-top__top-link--style::before,
-.open-top__top-link--style::after {
+.open-main__top-link--style::before,
+.open-main__top-link--style::after {
     content: "";
     width: 4px;
     height: 4px;
@@ -1998,15 +1998,15 @@ body {
     background-color: var(--main--color);
 }
 
-.open-top__top-link--style::before {
+.open-main__top-link--style::before {
     margin-right: 8px;
 }
 
-.open-top__top-link--style::after {
+.open-main__top-link--style::after {
     margin-left: 8px;
 }
 
-.open-top__top-link--active {
+.open-main__top-link--active {
     color: var(--main-text-color);
 }
 
@@ -2149,7 +2149,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #949494;  
+    color: #949494;
 }
 
 .open-article__list-link {
@@ -2176,11 +2176,123 @@ body {
     color: var(--main--color);
 }
 
-.open-article__list-link:active{
+.open-article__list-link:active {
     opacity: 0.6;
 }
 
 /* End of Open Info Section */
+
+/* Start Open Form Section */
+#open-form {
+    margin-bottom: 187px;
+    padding: 64px 0 65px 0;
+    background-image: url("../images/open-form-bg-img.jpg");
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.open-form-part {
+    display: flex;
+}
+
+.open-form-part__title-box {
+    width: 276px;
+    margin: 0 61px 0 100px;
+}
+
+.open-form-part__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.open-form-part__text {
+    margin: 8px 0 0 0;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.open-form {
+    width: 335px;
+}
+
+.open-form__input,
+.open-form__message {
+    width: 335px;
+    margin-bottom: 14px;
+    padding: 16px 22px 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--main-text-color);
+    background-color: #FFFFFF;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.open-form__message {
+    height: 165px;
+    resize: none;
+}
+
+.open-form__input:focus,
+.open-form__message:focus {
+    border: 2px solid var(--main--color);
+}
+
+.open-form__input:not(:placeholder-shown):not(:focus):invalid,
+.open-form__message:not(:placeholder-shown):not(:focus):invalid {
+    color: #DC4D41;
+    border: 2px solid #DC4D41;
+}
+
+.open-form__input::placeholder,
+.open-form__message::placeholder {
+    color: #949494;
+}
+
+.open-form__btn {
+    padding: 15px 49px 14px 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    transition: all .5s;
+}
+
+.open-form__btn:hover {
+    background-color: var(--main--color);
+    color: var(--main-text-color);
+}
+
+.open-form__btn:active {
+    opacity: 0.6;
+}
+
+.open-form {
+    position: relative;
+}
+
+.open-form::before {
+    position: absolute;
+    top: calc(50% - 295px);
+    left: calc(50% + 100px);
+    width: 700px;
+    height: 636px;
+    background-image: url("../images/open-form-dog-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+/* End of Open Form Section */
 
 /* ---------- End of Open Page ---------- */
 
