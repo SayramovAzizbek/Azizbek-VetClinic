@@ -1,3 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --main--color: #FFBD54;
     --main-text-color: #333333;
@@ -361,7 +375,8 @@ body {
 
 .header-main__question-link::before,
 .useful-list__link::before,
-.blog-post-list__link::before {
+.blog-post-list__link::before,
+.useful-list__btn-link::before {
     position: absolute;
     top: 0;
     left: -29px;
@@ -375,7 +390,8 @@ body {
 }
 
 .useful-list__link::before,
-.blog-post-list__link::before {
+.blog-post-list__link::before,
+.useful-list__btn-link::before {
     position: static;
 }
 
@@ -1059,7 +1075,8 @@ body {
 }
 
 .useful-list__link,
-.blog-post-list__link {
+.blog-post-list__link,
+.useful-list__btn-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1077,15 +1094,25 @@ body {
     background-color: transparent;
 }
 
+.useful-list__time-text {
+    margin-left: auto;
+}
+
 .useful-list__link:hover,
-.blog-post-list__link:hover {
+.blog-post-list__link:hover,
+.useful-list__btn-link:hover {
     color: var(--main--color);
 }
 
 .useful-list__link:active,
-.blog-post-list__link:active {
+.blog-post-list__link:active,
+.useful-list__btn-link:active {
     color: var(--main-text-color);
     opacity: .6;
+}
+
+.useful-list__btn-link {
+    display: none;
 }
 
 /* ------- Start Useful Item Active */
@@ -1122,6 +1149,16 @@ body {
 
 .useful-list__item--active .useful-list__time-text {
     margin-right: -30px;
+}
+
+.useful-list__item--active .useful-list__link {
+    display: none;
+}
+
+.useful-list__item--active .useful-list__btn-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 /* ------- End of Useful Item Active */
@@ -1230,6 +1267,18 @@ body {
 }
 
 .form-box__input:not(:-ms-input-placeholder):not(:focus):invalid {
+    color: #DC4D41;
+    border: 2px solid #DC4D41;
+}
+
+.form-box__input:not(:-moz-placeholder-shown):not(:focus):invalid,
+.form-box__message:not(:-moz-placeholder-shown):not(:focus):invalid {
+    color: #DC4D41;
+    border: 2px solid #DC4D41;
+}
+
+.form-box__input:not(:-ms-input-placeholder):not(:focus):invalid,
+.form-box__message:not(:-ms-input-placeholder):not(:focus):invalid {
     color: #DC4D41;
     border: 2px solid #DC4D41;
 }
@@ -1722,11 +1771,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 291px;
     margin-bottom: 10px;
 }
@@ -1736,8 +1785,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-size: 14px;
     line-height: 22px;
     color: var(--main-text-color);
@@ -1798,8 +1847,8 @@ body {
 
 .faq-accardion[open] .faq-accardion__part::after {
     -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .accardion-list__item:nth-child(3) .faq-accardion__part::after,
@@ -1810,8 +1859,8 @@ body {
 .accardion-list__item:nth-child(3) .faq-accardion[open] .faq-accardion__part::after,
 .accardion-list__item:nth-child(6) .faq-accardion[open] .faq-accardion__part::after {
     -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
+    -ms-transform: none;
+    transform: none;
 }
 
 .faq-accardion__text {
@@ -1847,8 +1896,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 636px;
     margin-left: 100px;
 }
@@ -2009,8 +2058,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -2033,8 +2082,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .open-main__top-link--style::before,
@@ -2091,8 +2140,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 447px;
     margin-top: 64px;
 }
@@ -2180,8 +2229,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -2452,11 +2501,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .blog-main__top-links {
@@ -2529,7 +2578,7 @@ body {
 
 .blog-post-list {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .blog-post-list__item {
@@ -2559,8 +2608,8 @@ body {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .blog-post-part__more-link-box {
@@ -2568,8 +2617,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 116px;
 }
 
@@ -2578,8 +2627,8 @@ body {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 15px 40px;
     font-weight: 500;
     line-height: 21px;
@@ -2631,8 +2680,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0 auto;
 }
 
@@ -2720,8 +2769,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .barber-info__btn-box {
@@ -2729,8 +2778,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .barber-info__btn {
@@ -2778,13 +2827,14 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-.barber-image-box__image:not(:last-child){
+.barber-image-box__image:not(:last-child) {
     margin-right: 20px;
 }
+
 /* End of About Info Barber Section */
 
 /* ---------- End of About Page ---------- */
@@ -2943,15 +2993,18 @@ body {
     border: 1px solid var(--main--color);
 } */
 
+
 .modal-form-box__input:not(:-moz-placeholder-shown):not(:focus):invalid, .modal-form-box__message:not(:-moz-placeholder-shown):not(:focus):invalid {
     color: #DC4D41;
     border: 2px solid #DC4D41;
 }
 
+
 .modal-form-box__input:not(:-ms-input-placeholder):not(:focus):invalid, .modal-form-box__message:not(:-ms-input-placeholder):not(:focus):invalid {
     color: #DC4D41;
     border: 2px solid #DC4D41;
 }
+
 
 .modal-form-box__input:not(:placeholder-shown):not(:focus):invalid,
 .modal-form-box__message:not(:placeholder-shown):not(:focus):invalid {
